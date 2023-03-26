@@ -1,0 +1,213 @@
+@media only screen and (width < 800px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .popup-active {
+    transform: translateX(300px);
+  }
+  .nav-shell {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    transition: transform 0.3s ease-out;
+  }
+  .top__control {
+    display: block;
+  }
+  .top-menu {
+    margin-top: 0px;
+    padding-block: 40px 40px;
+    padding-inline: 20px;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: start;
+    align-items: flex-start;
+    height: auto;
+    width: 300px;
+    background-color: #3d00b7;
+  }
+  .top-menu .top__left {
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    row-gap: 30px;
+  }
+  .top-menu .top__right {
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    row-gap: 30px;
+  }
+  .top-menu a {
+    font-size: 20px;
+    color: white;
+  }
+  .top-menu .top__form {
+    align-self: stretch;
+    max-width: 100%;
+    width: 100%;
+  }
+  .top-menu .top__form i {
+    color: #3d00b7;
+  }
+  .top-menu .top__search {
+    font-size: 18px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 0px;
+  }
+  .top-menu .top__search::-moz-placeholder {
+    color: #3d00b7;
+  }
+  .top-menu .top__search:-ms-input-placeholder {
+    color: #3d00b7;
+  }
+  .top-menu .top__search::placeholder {
+    color: #3d00b7;
+  }
+  .top-menu .top__upload-btn {
+    height: 21px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    background-color: #3d00b7;
+  }
+  .top-menu .top__wallet-btn {
+    height: 21px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    background-color: #3d00b7;
+    color: white;
+    font-weight: 500;
+  }
+  .top-menu .top__divider {
+    display: none;
+  }
+  .top-menu .top__brand {
+    display: none;
+  }
+  .page-divider {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding-inline: 3%;
+  }
+  .hero__left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__left p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .hero__left h1 {
+    font-size: 30px;
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  .hero__explore {
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .hero__single-qty h2 {
+    font-size: 28px;
+  }
+  .hero__dots {
+    display: none;
+  }
+  .hero__right {
+    width: 100%;
+    display: block;
+    height: 308px;
+  }
+  .hero__sticker {
+    width: 90px;
+    height: 90px;
+    top: 120px;
+    right: calc((100% - 260px) / 2 + 220px);
+  }
+  .hero .card1 {
+    width: 260px;
+    height: 286px;
+    right: calc((100% - 260px) / 2);
+  }
+  .hero .card2 {
+    width: 231.4px;
+    height: 254.5px;
+    right: calc((100% - 260px) / 2 - 10px);
+  }
+  .hero .card3 {
+    width: 201.5px;
+    height: 221.5px;
+    right: calc((100% - 260px) / 2 - 20px);
+  }
+  .hero__info {
+    row-gap: 5px;
+  }
+  .hero__info h6 {
+    font-size: 18px;
+  }
+  .hero__info .hero__description {
+    -moz-column-gap: 7px;
+    column-gap: 7px;
+  }
+  .hero__info span {
+    font-size: 16px;
+  }
+  .hero__card-bttm .bottom__left > p:first-child,
+  .hero__card-bttm .bottom__right > p:first-child {
+    font-size: 10px;
+  }
+  .hero__card-bttm .bottom__left > p:nth-child(2),
+  .hero__card-bttm .bottom__right > p:nth-child(2) {
+    font-size: 11px;
+  }
+  .hero__card-bttm .bottom__left i {
+    margin-right: 4px;
+  }
+}
+@media only screen and (700px <= width < 800px) {
+  .discover__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (width < 700px) {
+  .discover__grid {
+    grid-template-columns: auto;
+  }
+}
+@media only screen and (560px <= width < 850px) {
+  .discover .categories__left {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+@media only screen and (width < 560px) {
+  .discover .categories__left {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+} /*# sourceMappingURL=responsiveness(mobile)-salih.css.map */

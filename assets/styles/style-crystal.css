@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/IntegralCF-Bold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/IntegralCF-Medium.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+  src: url("../fonts/AvertaDemoPECuttedDemo-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+.amaze {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: rgba(217, 224, 236, 0.2);
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  height: 324px;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  padding-top: 100px;
+  width: 100%;
+  padding-inline: 8.333%;
+  flex-wrap: wrap;
+}
+
+.amazing {
+  width: 100%;
+}
+
+.amaze_left {
+  margin-top: -33px;
+  position: relative;
+  left: -45px;
+}
+
+.amaze_left h2 {
+  font-family: "Integral CF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.amaze_middle,
+.amaze_right {
+  display: flex;
+  margin-top: -33px;
+}
+
+.amaze_middle small,
+.amaze_right small {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #696969;
+}
+
+.img_text,
+.futr-text {
+  margin-left: 10px;
+}
+
+.img_text p,
+.futr-text p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.amaze_middle img,
+.amaze_right img {
+  width: 25px;
+  height: 25px;
+}
+
+.collection {
+  padding-inline: 8.333%;
+  width: 100%;
+}
+
+.collection-over {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+
+.collection-left .profile {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+
+.collection-left .splash {
+  width: 370px;
+  height: 390px;
+}
+
+.futr-text p {
+  position: relative;
+  top: 10px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.futr-text small {
+  position: relative;
+  top: -10px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.futr {
+  display: flex;
+}
+
+.highest-bid img,
+.highest-bid p {
+  display: inline;
+}
+
+.highest-bid small,
+.highest-bid p {
+  position: relative;
+  top: 10px;
+}
+
+.highest-bid p {
+  font-size: 13px;
+}
+
+.highest-bid img {
+  width: 13px;
+  height: 17px;
+  position: relative;
+  top: 13px;
+}
+
+.highest-bid small {
+  right: 17px;
+}
+
+.middle {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 40px;
+  column-gap: 20px;
+}
+
+.profile-futr {
+  margin-top: 10px;
+}
+
+.middle p:first-child {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.profile-futr img {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  top: 13px;
+}
+
+.inline {
+  display: inline;
+}
+.wrap img {
+  width: 8px;
+}
+
+.wrap p {
+  color: #00ac4f;
+  font-size: 12px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.wrap {
+  border: 1px solid #00ac4f;
+  margin-inline: 3px;
+  padding: 2px;
+  border-radius: 5px;
+  position: relative;
+  top: 3px;
+}
+
+.grey {
+  color: #757575;
+  padding-left: 3px;
+}
+
+.middle button:hover {
+  background-color: #3d00b7;
+  color: white;
+}
+
+.middle button {
+  display: block;
+  position: relative;
+  top: 20px;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  border-color: #3d00b7;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.middle .colored {
+  background-color: #3d00b7;
+  color: white;
+}
+
+.vertical-rule {
+  border: 1px solid #ececec;
+  background-color: #ececec;
+  position: relative;
+}
+
+.collection-right h1 {
+  font-family: "Integral CF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.last {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #3d00b7;
+  position: relative;
+  left: 5px;
+}
+
+table {
+  margin: 20px 2px;
+}
+
+td {
+  border-bottom: 1px solid #ececec;
+}
+
+.description-text img {
+  position: relative;
+  top: 5px;
+}
+
+.description-text p:first-child {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 103%;
+  letter-spacing: -0.025em;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.image-text img:first-child {
+  padding-inline: 25px;
+}
+
+.image-text {
+  padding-block: 10px;
+}
+
+.description-text {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+
+.description-text p:last-child {
+  display: inline;
+  color: #757575;
+}
+
+.ordered-list h4 {
+  padding-left: 20px;
+  color: #00ac4f;
+  padding-bottom: 10px;
+}
+
+.red h4 {
+  color: #ff1b44;
+}
+
+.num5 {
+  border-style: none;
+} /*# sourceMappingURL=style-crystal.css.map */

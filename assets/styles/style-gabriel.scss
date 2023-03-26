@@ -1,0 +1,424 @@
+@use "colors" as c;
+@use "fonts";
+
+/* Collection NFT starts here */
+.collection-nft {
+  margin-top: 134px;
+  margin-bottom: 102px;
+  height: auto;
+  min-height: 619px;
+  width: 100%;
+  padding-inline: 8.333333%;
+  padding-block: 65px 99px;
+  background-color: c.$amazeBackground;
+
+  .collection__title{
+    font-family: 'Integral CF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: black;
+    
+  }
+
+  .collection__display{
+    margin-block: 0px 99px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .collection__wrapper{
+    width: 31.5508%;
+    min-width: 315px;
+  }
+
+  .collection__upper-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.56637fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+    grid-gap: 9px;
+    grid-template-areas: 
+    "main small-1"
+    "main small-2"
+    "main small-3";
+
+    .collection__grid-small, .collection__grid-main{
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .collection__grid-main{
+      grid-area: main;
+      aspect-ratio: 1/1.024149;
+      border-radius: 11px;
+    }
+
+    .small-1{
+      grid-area: small-1;
+    }
+    
+    .small-2{
+      grid-area: small-2;
+    }    
+    .small-3{
+      grid-area: small-3;
+    }
+  }
+
+  .collection__bottom{
+    width: 100%;
+
+    .collection__nft-title{
+      margin-block: 29.4px 10.4px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      color: black;
+    }
+
+    .collection__btm-row{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .collection__user-info{
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    .collection__user-name{
+      margin: 0px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: black;
+    }
+
+    .collection__user-pp{
+      width: 28px;
+      height: 28px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .collection__qty{
+      text-align: center;
+      padding: 7.5px 12.5px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11.0008px;
+      line-height: 14px;
+      color: c.$collectionNFTButtonBlue;
+      border: 1px solid c.$collectionNFTButtonBlue;
+      border-radius: 60px;
+    }
+  }
+}
+// Collection NFT ends here
+
+// Sign up starts here
+.sign-up{
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  min-height: 606px;
+  padding-inline: 8.333333%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .sign__left{
+    width: 66.916666%;
+    height: 100%;   
+    min-height: 606px; 
+    position: relative;
+
+    .sign__nft, .sign__user-pp{
+      position: absolute;
+      border-radius: 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .nft1{
+      max-width: 300px;
+      width: 37.3599%;      
+      aspect-ratio: 1/1;
+      min-width: 180px;
+      top: 0px;
+      left: 0px;
+    }
+
+    .nft2{
+      max-width: 260px;
+      width: 30.00623%;
+      min-width: 120px;
+      aspect-ratio: 1/1.09997;
+      top: 138px;
+      left: 45.330012%;
+    }
+
+    .nft3{
+      max-width: 200px;
+      width: 24.2279%;
+      min-width: 80px;
+      aspect-ratio: 1/1.09997;
+      top: 352px;
+      left: 13.07597%;
+    }
+
+    .sign__user-pp{
+      width: 80px;
+      height: 80px;
+      right: -40px;
+      bottom: -40px;
+    }
+  }
+
+  .sign__right{
+    width: 33.083334%;
+    height: 100%;
+    min-width: 330.8px;
+    display: flex;
+    flex-direction: column;
+    
+    .sign__title{
+      max-width: 320px;
+      font-family: 'Integral CF';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: black;
+      margin: 138px 0px 0px 0px;
+    }
+
+    .sign__desc{
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      color: c.$signUpDescriptionGrey;
+      margin-block: 40px 32px;
+    }
+
+    .sign__sign-btn{
+      width: fit-content;
+      margin: 0px;
+      padding: 20px 40px;
+      border-radius: 50px;
+      border: none;
+      background-color: c.$primaryBlue;
+      font-family: 'Averta Demo PE Cutted Demo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 0.065em;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease-out;
+    }
+
+    .sign__sign-btn:hover{
+      background-color: c.$primaryBlueHover;
+    }
+  }
+}
+
+// Sign up ends here
+
+// Footer starts here
+.footer{
+  width: 100%;
+  padding-inline: 8.33333%;
+  margin-bottom: 24px;
+
+  .footer__main{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 92px;
+    justify-content: space-between;
+  }
+
+  .footer__column{
+    .footer__column-title{
+      margin: 0px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      color: black;
+    }
+
+    ul{
+      margin-top: 24px;
+      margin-bottom: 0px;
+      list-style-type: none;
+      padding: 0px;
+      line-height: 28px;
+    }
+
+    a{
+      text-decoration: none;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: c.$footerLinkText;
+    }
+
+    a:hover{
+      color: c.$primaryBlue;
+      font-weight: 600;
+    }
+  }
+
+  .footer__brand{
+    margin: 0px;
+    font-family: 'Integral CF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+  }
+
+  .footer__desc{
+    margin-top: 27px;
+    margin-bottom: 32px;
+    max-width: 362px;
+    font-family: 'Averta Demo PE Cutted Demo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: c.$secondaryTextGrey;
+  }
+
+  .footer__desc:last-child{
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .column1{
+    margin-right: 8px;
+    max-width: 333px;
+  }
+
+  .footer__social-row{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 18px;
+  }
+
+  .footer__social-btn{
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .footer__form{
+    position: relative;
+    width: 100%;
+  }
+
+  .footer__email{
+    width: 100%;
+    padding-block: 22px;
+    padding-left: 25px;
+    border-radius: 45px;
+    border: 2px solid c.$footerEmailBorderGray;
+    
+  }
+
+  .footer__email:focus{
+    outline: 2px solid c.$footerEmailBorderFocus;
+  }
+
+  .footer__email, .footer__email::placeholder{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.1587px;
+    line-height: 16px;
+    color: c.$footerEmailInputText;
+  }
+
+  .footer__submit{
+    position: absolute;
+    right: 7.21px;
+    top: 9px;
+    z-index: 1;
+    padding: 15px 30px;
+    border-radius: 45px;
+    border: none;
+    background-color: c.$collectionNFTButtonBlue;
+    color: white;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.1587px;
+    line-height: 16px;
+    letter-spacing: 0.065em;
+    
+  }
+
+  .footer__divider{
+    width: 100%;
+    height: 1px;
+    background-color: c.$dividerGrey;
+    margin-bottom: 15px;
+    margin-top: 69px;
+  }
+
+  .footer__copyright{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Averta Demo PE Cutted Demo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: c.$footerCopyrightText;
+  }
+}
+
+
+
+@media only screen and (width<800px) {
+  .sign-up{
+
+    .sign__left{
+      .nft2{
+        top: 250px;
+        left: 55%;
+    }
+  }
+
+    
+  }
+}

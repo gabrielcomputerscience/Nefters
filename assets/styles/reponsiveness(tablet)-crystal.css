@@ -1,0 +1,36 @@
+@media only screen and (800px <= width <= 1200px) {
+  .vertical-rule {
+    display: none;
+  }
+  .collection-left {
+    margin-bottom: 30px;
+    width: calc((100% - 400px) / 2 + 331px);
+  }
+  .collection-middle {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .amazing {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding-inline: 3%;
+    width: 100%;
+  }
+  .amaze {
+    width: 100%;
+    justify-content: center;
+  }
+  .amaze_left,
+  .amaze_right,
+  .amaze_middle {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h2,
+  p {
+    max-width: 100%;
+  }
+} /*# sourceMappingURL=reponsiveness(tablet)-crystal.css.map */

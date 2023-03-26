@@ -1,0 +1,14 @@
+@media only screen and (width < 800px) {
+  .vertical-rule {
+    display: none;
+  }
+  .collection-over {
+    flex-direction: row;
+    row-gap: 20px;
+  }
+  .amaze {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+  }
+}/*# sourceMappingURL=reponsiveness(mobile)-crystal.css.map */

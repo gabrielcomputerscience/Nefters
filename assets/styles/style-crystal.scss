@@ -1,0 +1,309 @@
+@use "colors" as c;
+@use "fonts";
+
+.amaze {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: c.$amazeBackground;
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  height: 326px;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  padding-top: 100px;
+}
+
+.amaze_left {
+  margin-top: -33px;
+}
+
+.amaze_left h4 {
+  font-family: "Integral CF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.amaze_middle,
+.amaze_right {
+  display: flex;
+}
+
+.amaze_middle small,
+.amaze_right small {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: c.$amazeSmallTextGrey;
+}
+
+.img_text {
+  margin-left: 10px;
+}
+
+.img_text p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.amaze_middle img,
+.amaze_right img {
+  width: 25px;
+  height: 25px;
+}
+
+// style for collection
+
+.collection-over {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.collection-left .profile {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+
+.collection-left .splash {
+  width: 370px;
+  height: 390px;
+}
+
+.futr-text {
+  @extend .img_text;
+}
+
+.futr-text p {
+  position: relative;
+  top: 10px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.futr-text small {
+  position: relative;
+  top: -10px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.futr {
+  display: flex;
+}
+
+.highest-bid img,
+.highest-bid p {
+  display: inline;
+}
+
+.highest-bid small,
+.highest-bid p {
+  position: relative;
+  top: 10px;
+}
+
+.highest-bid p {
+  font-size: 13px;
+}
+
+.highest-bid img {
+  width: 13px;
+  height: 17px;
+  position: relative;
+  top: 13px;
+}
+
+.highest-bid small {
+  right: 17px;
+}
+
+.collection-middle {
+  position: relative;
+  left: -100px;
+  width: 25%;
+}
+
+.middle {
+  display: flex;
+  // justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.profile-futr {
+  margin-top: 10px;
+}
+
+.middle p:first-child {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.profile-futr img {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  top: 13px;
+}
+
+.inline {
+  display: inline;
+}
+
+.wrap img {
+  width: 8px;
+}
+
+.wrap p {
+  color: c.$collectionText;
+  font-size: 12px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.wrap {
+  border: 1px solid c.$collectionText;
+  margin-inline: 3px;
+  padding: 2px;
+  border-radius: 5px;
+  position: relative;
+  top: 3px;
+}
+
+.grey {
+  color: c.$searchBarIcon;
+}
+
+.middle button:hover {
+  background-color: #3d00b7;
+  color: c.$collectionWhite;
+}
+
+.middle button {
+  display: block;
+  position: relative;
+  top: 20px;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  border-color: c.$primaryBlue;
+  background-color: c.$collectionWhite;
+}
+
+.middle .colored {
+  background-color: c.$primaryBlue;
+  color: c.$collectionWhite;
+}
+
+.vertical-rule {
+  border: 1px solid c.$collectionVerticalLine;
+  background-color: c.$collectionVerticalLine;
+  position: relative;
+}
+
+/* .collection-right {
+  /* position: relative;
+  right: 250px; 
+} */
+
+.collection-right {
+  position: relative;
+  right: 250px;
+}
+
+.collection-right h1 {
+  font-family: "Integral CF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.last {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: c.$primaryBlue;
+  position: relative;
+  left: 5px;
+}
+
+table {
+  margin: 20px 2px;
+}
+
+td {
+  border-bottom: 1px solid c.$collectionVerticalLine;
+}
+
+.description-text img {
+  position: relative;
+  top: 5px;
+}
+
+.description-text p:first-child {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 103%;
+  letter-spacing: -0.025em;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.image-text img:first-child {
+  padding-inline: 25px;
+}
+
+.image-text {
+  padding-block: 10px;
+}
+
+.description-text {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+
+.description-text p:last-child {
+  display: inline;
+  color: c.$searchBarIcon;
+}
+
+.ordered-list h4 {
+  // position: relative;
+  // left: 12px;
+  padding-left: 20px;
+  color: c.$collectionText;
+  padding-bottom: 10px;
+}
+
+.red h4 {
+  color: c.$collectionPercentageRed;
+}
+
+.num5 {
+  border-style: none;
+}

@@ -1,0 +1,30 @@
+@media only screen and (800px <= width <= 1200px) {
+  .vertical-rule {
+    display: none;
+  }
+
+  .collection-left {
+    margin-bottom: 30px;
+  }
+
+  .collection-middle {
+    margin-top: 10px;
+  }
+
+  .amazing {
+    width: 100%;
+    padding-inline: 8%;
+  }
+
+  .amaze {
+    display: grid;
+    row-gap: 20px;
+    padding-block: 10px;
+    font-size: 16px;
+  }
+
+  .amaze-left {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}

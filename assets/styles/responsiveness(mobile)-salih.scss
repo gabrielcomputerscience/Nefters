@@ -1,0 +1,266 @@
+@use "colors" as c;
+
+@media only screen and (width < 800px) {
+
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-only{
+        display:block;
+    }
+
+    .popup-active{
+        transform: translateX(300px);
+    }
+
+    .nav-shell{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: -300px;
+        transition: transform 0.3s ease-out;
+    }
+
+    .top__control{
+        display: block;
+    }
+
+   .top-menu{
+    margin-top: 0px;
+    padding-block: 40px 40px;
+    padding-inline: 20px;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: start;
+    align-items: flex-start;
+    height: auto;
+    width: 300px;
+    background-color: c.$primaryBlue;
+
+        .top__left{
+            
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;  
+            width: 100%;   
+            height: auto;    
+            row-gap: 30px;   
+            
+        }
+        .top__right{
+            align-items: flex-start;
+            justify-content: start;
+            width: 100%;
+            flex-direction: column;
+            height: auto;
+            row-gap: 30px; 
+        }
+
+        a{
+            font-size: 20px;
+            color: white;
+        }
+
+        .top__form{
+            align-self: stretch;
+            max-width: 100%;
+            width: 100%;
+
+            i{
+                color: c.$primaryBlue;
+            }
+        }
+
+        .top__search{
+            font-size: 18px;
+            text-align: center;
+            padding: 0px;
+            border-radius: 0px;
+        }
+
+        .top__search::placeholder{
+            color: c.$primaryBlue;
+        }
+        
+        .top__upload-btn{
+            height: 21px;
+            font-size: 18px;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            background-color: c.$primaryBlue;
+        }
+
+        .top__wallet-btn{
+            height: 21px;
+            font-size: 18px;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            background-color: c.$primaryBlue;
+            color: white;
+            font-weight: 500;
+        }
+        .top__divider{
+            display: none;
+        }
+
+        .top__brand{
+            display: none;
+        }
+
+        
+    }   
+
+    .page-divider{
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        padding-inline: 3%;
+        
+
+        &__left{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            
+
+            p{
+                margin-top: 0px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                max-width: 100%;
+            }
+
+            h1{
+                font-size: 30px;
+                margin-top: 25px;
+                max-width: 100%;
+            }
+        }
+
+        &__explore{
+            margin-bottom: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        &__single-qty{
+            h2{
+                font-size: 28px;
+            }
+        }
+
+        &__dots{
+            display: none;
+        }
+
+        &__right{
+            width: 100%;
+            display: block;
+            height: 308px;
+        }
+
+        &__sticker{
+            width: 90px;
+            height: 90px;
+            top: 120px;
+            right: calc((100% - 260px) / 2 + 220px) ;
+        }
+
+  
+
+        
+         .card1{
+         width: 260px;
+         height: 286px;         
+         right: calc((100% - 260px) / 2);
+         }
+
+         .card2{
+         width: 231.4px;
+         height: 254.5px;
+         right: calc((100% - 260px) / 2 - 10px);
+         }
+         .card3{
+            width: 201.5px;
+            height: 221.5px;
+             right: calc((100% - 260px) / 2 - 20px);
+         }
+
+         &__info{
+
+            row-gap: 5px;
+
+            h6{
+                font-size: 18px;
+            }
+
+            .hero__description{
+                column-gap: 7px;
+            }
+
+            span{
+                font-size: 16px;
+            }
+         }
+
+         &__card-bttm{
+
+            .bottom__left>p:first-child,
+            .bottom__right>p:first-child{
+                font-size: 10px;
+            }
+
+            .bottom__left>p:nth-child(2),
+            .bottom__right>p:nth-child(2){
+                font-size: 11px;
+            }
+
+            .bottom__left i {
+                margin-right: 4px;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and ( 700px <=width < 800px ) {
+    .discover__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and ( width < 700px ) {
+    .discover__grid{
+        grid-template-columns:  auto;
+    }
+}
+
+@media only screen and ( 560px <= width < 850px ) {
+    .discover .categories__left{
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+
+    }
+}
+
+@media only screen and ( width < 560px ) {
+    .discover .categories__left{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+
+    }
+}
